@@ -1,6 +1,6 @@
-# 📡 INFORME TÉCNICO DE SISTEMA IoT
+# 📡 INFORME TÉCNICO
 ### Monitoreo Ambiental Remoto y Telemetría Industrial
-> **Autor:** Estación de Telemetría OSP &nbsp;&bull;&nbsp; **Plataforma:** ESP32 & Node-RED &nbsp;&bull;&nbsp; **Versión:** 1.0.0
+> **Proyecto:** Estación de Telemetría OSP &nbsp;&bull;&nbsp; **Plataforma:** ESP32 & Node-RED &nbsp;&bull;&nbsp; **Versión:** 1.0.0
 
 ---
 
