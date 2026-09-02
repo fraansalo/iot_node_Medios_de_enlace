@@ -4,7 +4,7 @@
 
 ---
 
-## 1. 📋 Resumen y Objetivos
+## 1. Resumen y Objetivos
 El presente proyecto implementa una arquitectura de Internet de las Cosas (IoT) orientada al monitoreo ambiental y de seguridad física en tiempo real. El sistema recolecta variables críticas (temperatura, humedad, presencia de agua por inundación y calidad de enlace RF) mediante un nodo de borde basado en **ESP32**, transmitiendo la información de forma segura hacia la nube mediante el protocolo **MQTT sobre TLS (MQTTS)** y visualizándola en un panel de control interactivo (*Dashboard*) desarrollado en **Node-RED**.
 
 > [!NOTE]
@@ -15,7 +15,7 @@ El presente proyecto implementa una arquitectura de Internet de las Cosas (IoT) 
 
 ---
 
-## 2. ⚡ Profundización en el Protocolo MQTT y el Modelo Pub/Sub
+## 2. Profundización en el Protocolo MQTT y el Modelo Pub/Sub
 A diferencia de los sistemas tradicionales basados en solicitudes y respuestas (como HTTP), el ecosistema IoT requiere un canal de comunicación ágil que minimice el ancho de banda y el consumo energético. Es aquí donde **MQTT (Message Queuing Telemetry Transport)** se posiciona como el estándar indiscutido de la industria.
 
 ### ¿Cómo funciona la arquitectura Publicar/Suscribir (Pub/Sub)?
@@ -32,7 +32,7 @@ MQTT prescinde de la conexión directa punto a punto, introduciendo un intermedi
 
 ---
 
-## 3. 🛠️ Arquitectura del Sistema y Topología
+## 3. Arquitectura del Sistema y Topología
 La solución se desglosa en tres capas funcionales que garantizan la modularidad y el desacoplamiento operativo:
 
 | Capa del Sistema | Componente Tecnológico | Función Principal en la Solución |
@@ -43,7 +43,7 @@ La solución se desglosa en tres capas funcionales que garantizan la modularidad
 
 ---
 
-## 4. 🧩 Diseño del Firmware y Modularización
+## 4. Diseño del Firmware y Modularización
 El código fuente en C++ para el ESP32 se estructuró bajo estándares de ingeniería de software utilizando **PlatformIO**, aislando la lógica de negocio y las configuraciones de hardware en módulos independientes:
 
 * **`config.h`:** Cabecera destinada al almacenamiento centralizado de credenciales de red, parámetros de conexión al Broker y asignación de pines físicos mediante macros eficientes (`#define`).
@@ -52,5 +52,5 @@ El código fuente en C++ para el ESP32 se estructuró bajo estándares de ingeni
 
 ---
 
-## 5. 🚀 Conclusiones y Escalabilidad
+## 5. Conclusiones y Escalabilidad
 El desarrollo demuestra una alta versatilidad de despliegue. Puede implementarse de forma inmediata en entornos académicos mediante túneles seguros locales (**Ngrok**), o bien evolucionar de manera transparente hacia una arquitectura industrial 100% cloud migrando el motor de procesamiento Node-RED a un servidor virtual privado (VPS) con disponibilidad continua 24/7 sin incurrir en costos operativos adicionales.
